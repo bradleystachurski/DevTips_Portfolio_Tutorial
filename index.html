@@ -14,11 +14,17 @@
   <title>{{ site.data.settings.title }}</title>
 
   <link rel="stylesheet" href="assets/css/all.css">
+  <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
+  {% include analytics.html %}
 </head>
 <body>
 
 {% include header.html %}
+
+{% include footer.html %}
+
+
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="assets/js/functions.js"></script>
