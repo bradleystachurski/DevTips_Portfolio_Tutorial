@@ -1,6 +1,5 @@
 <section>
-
-  <h3 id="about-me">About Myself</h3>
+  <h3>About Myself</h3>
 
   <div class="face-lockup">
 
@@ -13,30 +12,79 @@
 
   </div>
 
-
   <div class="blurb">
-    {{ site.data.settings.blurb | markdownify }}
+    <p>
+      <strong>Fanny pack tumeric pabst brunch keffiyeh keytar.</strong> Ramps intelligentsia 3 wolf moon sriracha, umami normcore squid. VHS chartreuse flannel austin asymmetrical sartorial 3 wolf moon slow-carb, 90's vape marfa mlkshk whatever. Listicle vinyl disrupt sartorial, tumeric twee ugh ennui leggings humblebrag PBR&B 3 wolf moon normcore tumblr drinking vinegar. Raw denim intelligentsia everyday carry, chambray craft beer fanny pack tbh pop-up heirloom tote bag single-origin coffee. Ethical bushwick fanny pack, swag williamsburg chicharrones celiac. Asymmetrical sriracha gastropub tote bag, gentrify keytar raw denim tofu deep v microdosing viral.
+    </p>
   </div>
 
-  {% if site.data.settings.skills %}
 
   <div class="skill-lockup">
 
-    {% for skill in site.data.settings.skills %}
-
-      <div class="skill-unit">
-        <div class="skill-label">{{ skill.name }}</div>
-        <div class="skill-icons skill-{{ skill.value }}">
-          {% for i in (1..10) %}
-            <span></span>
-          {% endfor %}
-        </div>
+    <div class="skill-unit">
+      <div class="skill-label">Communication</div>
+      <div class="skill-icons">
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
       </div>
+    </div>
 
-    {% endfor %}
+    <div class="skill-unit">
+      <div class="skill-label">Organization</div>
+      <div class="skill-icons">
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+    </div>
+
+    <div class="skill-unit">
+      <div class="skill-label">Learning</div>
+      <div class="skill-icons skill-2">
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+    </div>
+
+    <div class="skill-unit">
+      <div class="skill-label">Teaching</div>
+      <div class="skill-icons skill-8">
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+    </div>
+
+    <div class="skill-unit">
+      <div class="skill-label">Planning</div>
+      <div class="skill-icons">
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+    </div>
+
+    <div class="skill-unit">
+      <div class="skill-label">Visual Design</div>
+      <div class="skill-icons">
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+    </div>
+
+    <div class="skill-unit">
+      <div class="skill-label">UX Design</div>
+      <div class="skill-icons">
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+    </div>
+
+    <div class="skill-unit">
+      <div class="skill-label">Programming</div>
+      <div class="skill-icons">
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+    </div>
 
   </div>
-
-  {% endif %}
 
 </section>
